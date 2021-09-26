@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-26 03:29:37 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDI6NDQ6NTggUE07MjAzOQ=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDM6Mjk6MzcgUE07MTsyMTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="E1" type="Real" array="False" size=""/>
+            <declare name="E2" type="Real" array="False" size=""/>
+            <declare name="S" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name&quot;" newline="True"/>
+            <input variable="lastname"/>
+            <output expression="&quot;Enter two numbers&quot;" newline="True"/>
+            <input variable="E1"/>
+            <input variable="E2"/>
+            <assign variable="S" expression="E1 + E2"/>
+            <output expression="&quot;The sum is&quot; &amp; S" newline="True"/>
+            <output expression="&quot;Enter the sum of the two scores&quot;" newline="True"/>
+            <input variable="S"/>
+            <assign variable="A" expression="S /2"/>
+            <output expression="&quot;The average for&quot;  &amp; lastname  &amp; A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
