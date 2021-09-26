@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-26 04:43:42 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDQ6Mzg6NTYgUE07MjA0Mg=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDQ6NDM6NDIgUE07MTsyMTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I1" type="Real" array="False" size=""/>
+            <declare name="T1" type="Real" array="False" size=""/>
+            <declare name="S" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="T" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of the item purchased&quot;" newline="True"/>
+            <output expression="&quot;Enter 0.07 as the tax&quot;" newline="True"/>
+            <input variable="I1"/>
+            <input variable="T1"/>
+            <assign variable="A" expression="I1"/>
+            <assign variable="T" expression="T1"/>
+            <assign variable="S" expression="I1 * T1 + T1"/>
+            <output expression="&quot;The amount is&quot; &amp; A" newline="True"/>
+            <output expression="&quot;The tax is&quot; &amp; T" newline="True"/>
+            <output expression="&quot;The total with tax is&quot; &amp; S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

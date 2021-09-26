@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-26 04:27:30 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDQ6MjQ6MjggUE07MjAzNg=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDQ6Mjc6MzAgUE07MTsyMTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="M1" type="Real" array="False" size=""/>
+            <declare name="T1" type="Real" array="False" size=""/>
+            <declare name="S" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter amount of the meal&quot;" newline="True"/>
+            <output expression="&quot;Enter 0.15 for the tip&quot;" newline="True"/>
+            <input variable="M1"/>
+            <input variable="T1"/>
+            <assign variable="S" expression="M1 * T1"/>
+            <output expression="&quot;The tip should be&quot; &amp; S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

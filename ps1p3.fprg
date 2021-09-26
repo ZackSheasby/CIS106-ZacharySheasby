@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-26 04:10:23 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDM6NTc6NTAgUE07MjAzNg=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMDktMjY7MDQ6MTA6MjMgUE07MTsyMTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="G1" type="Real" array="False" size=""/>
+            <declare name="G2" type="Real" array="False" size=""/>
+            <declare name="S" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter miles driven&quot;" newline="True"/>
+            <output expression="&quot;Enter gallons used&quot;" newline="True"/>
+            <input variable="G1"/>
+            <input variable="G2"/>
+            <assign variable="S" expression="G1 / G2"/>
+            <output expression="&quot;The miles per gallon is&quot; &amp; S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
