@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-03 02:04:11 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMDM7MDE6NTI6NDcgUE07MjAyMg=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMDM7MDI6MDQ6MTEgUE07MTsyMTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L1" type="String" array="False" size=""/>
+            <declare name="C1" type="Real" array="False" size=""/>
+            <declare name="T" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter lastname&quot;" newline="True"/>
+            <input variable="L1"/>
+            <output expression="&quot;Enter credit hours taken&quot;" newline="True"/>
+            <input variable="C1"/>
+            <assign variable="T" expression="C1 * 250 + 100"/>
+            <output expression="&quot;The cost of tution for&quot; &amp; L1 &amp;  T" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

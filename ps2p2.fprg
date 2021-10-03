@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-03 01:25:32 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMDM7MDE6MjE6NDIgUE07MjAxMw=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMDM7MDE6MjU6MzIgUE07MTsyMTI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L1" type="String" array="False" size=""/>
+            <declare name="H1" type="Real" array="False" size=""/>
+            <declare name="P1" type="Real" array="False" size=""/>
+            <declare name="S" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter lastname&quot;" newline="True"/>
+            <input variable="L1"/>
+            <output expression="&quot;Enter hours worked&quot;" newline="True"/>
+            <output expression="&quot;Enter pay rate&quot;" newline="True"/>
+            <input variable="H1"/>
+            <input variable="P1"/>
+            <assign variable="S" expression="H1 * P1"/>
+            <output expression="&quot;The gross pay for&quot; &amp; L1 &amp; S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-03 01:51:54 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMDM7MDE6NDA6MDIgUE07MjAxMA=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMDM7MDE6NTE6NTQgUE07MTsyMTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L1" type="Real" array="False" size=""/>
+            <declare name="W1" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="P" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter length of rectangle&quot;" newline="True"/>
+            <output expression="&quot;Enter width of rectangle&quot;" newline="True"/>
+            <input variable="L1"/>
+            <input variable="W1"/>
+            <assign variable="A" expression="L1 * W1"/>
+            <assign variable="P" expression="2 * L1 + 2 * W1"/>
+            <output expression="&quot;The area for the rectangle is&quot; &amp; A" newline="True"/>
+            <output expression="&quot;The perimeter for the reactangle is&quot; &amp; P" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
