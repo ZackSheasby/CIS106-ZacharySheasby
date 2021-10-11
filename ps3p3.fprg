@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 05:43:47 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMTA7MDQ6NDU6NDkgUE07MjAyNw=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMTA7MDU6NDM6NDcgUE07MTsyMTMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="charge" type="Real" array="False" size=""/>
+            <declare name="up" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter number of books&quot;" newline="True"/>
+            <input variable="qty"/>
+            <output expression="&quot;Enter cost of books&quot;" newline="True"/>
+            <input variable="cost"/>
+            <assign variable="total" expression="qty * cost"/>
+            <if expression="total&lt;50.00">
+                <then>
+                    <assign variable="up" expression="25.00"/>
+                </then>
+                <else>
+                    <assign variable="up" expression="0.00"/>
+                </else>
+            </if>
+            <assign variable="total" expression="qty * cost + up"/>
+            <output expression="&quot;Total Charge&quot; &amp; total" newline="True"/>
+            <output expression="&quot;Shipping Charge&quot; &amp; up" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
