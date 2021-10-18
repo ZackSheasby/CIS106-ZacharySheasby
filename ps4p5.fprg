@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-17 11:57:09 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMTc7MTE6NDk6MjEgUE07MjAyNg=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMTc7MTE6NTc6MDkgUE07MTsyMTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="sal" type="Real" array="False" size=""/>
+            <declare name="joblvl" type="Real" array="False" size=""/>
+            <declare name="bonusrate" type="Real" array="False" size=""/>
+            <declare name="bonus" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Last Name&quot;" newline="True"/>
+            <input variable="lastname"/>
+            <output expression="&quot;Enter Salary&quot;" newline="True"/>
+            <input variable="sal"/>
+            <output expression="&quot;Enter Job Level&quot;" newline="True"/>
+            <input variable="joblvl"/>
+            <if expression="joblvl &gt; 10">
+                <then>
+                    <assign variable="bonusrate" expression=".25"/>
+                </then>
+                <else>
+                    <if expression="joblvl &gt; 5">
+                        <then>
+                            <assign variable="bonusrate" expression=".20"/>
+                        </then>
+                        <else>
+                            <assign variable="bonusrate" expression=".10"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="bonus" expression="sal * bonusrate"/>
+            <output expression="&quot;Lastname:       &quot; &amp;lastname" newline="True"/>
+            <output expression="&quot;Bonus:      &quot; &amp;bonus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

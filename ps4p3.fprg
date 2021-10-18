@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-17 11:14:54 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMTc7MDk6NTE6MzQgUE07MjAzMA=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMTc7MTE6MTQ6NTQgUE07MTsyMTMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="principle" type="Real" array="False" size=""/>
+            <declare name="yearmat" type="Real" array="False" size=""/>
+            <declare name="intrate" type="Integer" array="False" size=""/>
+            <declare name="firstyear" type="Real" array="False" size=""/>
+            <input variable="principle"/>
+            <if expression="principle &gt; 100000">
+                <then>
+                    <assign variable="intrate" expression="0.06 * 5 * principle"/>
+                </then>
+                <else>
+                    <if expression="principle &gt;=50000 and principle &lt; 100000">
+                        <then>
+                            <assign variable="intrate" expression="0.05 * 10 * principle"/>
+                        </then>
+                        <else>
+                            <if expression="principle &gt;= 50000 and principle &lt; 100000">
+                                <then>
+                                    <assign variable="intrate" expression="0.04 * 5 * principle"/>
+                                </then>
+                                <else>
+                                    <assign variable="intrate" expression="0.02 * principle"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="firstyear" expression="principle * intrate"/>
+            <output expression="&quot;Principle:    &quot; &amp; principle" newline="True"/>
+            <output expression="&quot;Interest Rate:     &quot; &amp;intrate" newline="True"/>
+            <output expression="&quot;Interest Amount for 1st Year:    &quot; &amp;firstyear" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
