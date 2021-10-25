@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zacks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-24 08:01:21 PM"/>
+        <attribute name="created" value="emFja3M7QkxEOzIwMjEtMTAtMjQ7MDY6Mjg6MTkgUE07MjAzMg=="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMjQ7MDY6Mjg6MjEgUE07MTt6YWNrcztCTEQ7MjAyMS0xMC0yNDswNTo1NzoyNiBQTTtwczVwMy5mcHJnOzUyMDI="/>
+        <attribute name="edited" value="emFja3M7QkxEOzIwMjEtMTAtMjQ7MDg6MDE6MjEgUE07MTsyMTI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <declare name="totaldata" type="Integer" array="False" size=""/>
+            <declare name="totald" type="Real" array="False" size=""/>
+            <assign variable="totald" expression="0"/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <declare name="grosspay" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to compute your Gross Pay(Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <assign variable="counter" expression="counter + 1"/>
+                <output expression="&quot;Enter Last Name&quot;" newline="True"/>
+                <input variable="lastname"/>
+                <output expression="&quot;Enter Hours Worked&quot;" newline="True"/>
+                <input variable="hours"/>
+                <output expression="&quot;Enter Rate of Pay&quot;" newline="True"/>
+                <input variable="pay"/>
+                <assign variable="grosspay" expression="pay * hours"/>
+                <assign variable="totald" expression="totald + grosspay"/>
+                <output expression="&quot;Student:   &quot;&amp;lastname" newline="True"/>
+                <output expression="&quot;Grosspay:     &quot; &amp;grosspay" newline="True"/>
+                <output expression="&quot;Do you want to compute your Gross Pay? (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+            <output expression="&quot;Total Number of Employees&quot; &amp;counter" newline="True"/>
+            <assign variable="totaldata" expression="totald / counter"/>
+            <output expression="&quot;Average of all the Gross Pays:    &quot; &amp;totaldata" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
